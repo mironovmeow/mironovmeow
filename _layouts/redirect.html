@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta content="0;url={{ page.redir_to }}" http-equiv="refresh"/>
+    <script type="text/javascript">window.location.href = "{{ page.redir_to }}"</script>
+    <link href="{{ page.redir_to }}" rel="canonical"/>
+    <title>{{ page.title | default: Redirecting... }}</title>
+</head>
+<body>
+<p>
+    Здесь ничего нет, оно находится <a href="{{ page.redir_to }}">где-то там...</a>
+    {{ content }}
+</p>
+</body>
+</html>
